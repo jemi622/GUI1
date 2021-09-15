@@ -6,6 +6,12 @@ Copyright (c) 2021 by Jenna Parrillo. All rights reserved. May be freely copied 
 excerpted for educational purposes with credit to the author.
 updated by Jenna Parrillo on September 15th, 2021
 */
+
+body { /*Sets the margin and font for the body of the website*/
+    margin:0 0;
+    font-family:'Urbanist', sans-serif; /*https://fonts.google.com/specimen/Urbanist?query=urba*/
+}
+
 h1 { /*Sets the font size for the largest header*/
     font-size: 4rem;
 }
@@ -27,24 +33,8 @@ th { /*Aligns the text of the table headers to left*/
     text-align: left;
 }
 
-body { /*Sets the margin and font for the body of the website*/
-    margin:0 0;
-    font-family:'Urbanist', sans-serif;
-}
-
 iframe { /*Removes the border for the iframe*/
     border: 0px;
-}
-
-.videoHeader {
-    width: max-content;
-    margin: 0 auto;
-    margin-bottom: 1rem;
-}
-
-.center { /*Class for centering content*/
-    width: max-content;
-    margin: 0 auto;
 }
 
 .pageHeader { /*Class for my header. Makes it green and gives it some padding*/
@@ -59,6 +49,16 @@ iframe { /*Removes the border for the iframe*/
     width: max-content;
 }
 
+.container { /*Container class. Sets some padding and the margin for uniform containers*/
+    padding: 0 8rem;
+    margin-top: 3rem;
+}
+
+.center { /*Class for centering content*/
+    width: max-content;
+    margin: 0 auto;
+}
+
 .leftParagraph { /*Class for a left justified paragraph*/
     width: 50%;
 }
@@ -67,57 +67,6 @@ iframe { /*Removes the border for the iframe*/
     width: 50%;
     margin-left: auto;
     text-align: right;
-}
-
-.container { /*Container class. Sets some padding and the margin for uniform containers*/
-    padding: 0 8rem;
-    margin-top: 3rem;
-}
-
-.button { /*Class to make a pretty looking button that transitions color when you hover over it*/
-    background-color: #dc2666;
-    width: max-content;
-    padding: 1rem 1rem;
-    color: white;
-    text-decoration: none;
-    font-family:'Urbanist', sans-serif;
-    font-weight: 800;
-    letter-spacing: 1px;
-    border-radius:0.5rem;
-    box-shadow: rgba(0, 0, 0, 0.5) 0px 3.5px 8.5px;
-    /*This is the part that sets the transitions*/
-    transition-property: all;
-    transition-timing-function: cubic-bezier(0.4, 0.1, 0.2, 1);
-    transition-duration: 200ms;
-}
-
-.button:hover { /*Class that changes the look of the button when you hover over it*/
-    background-color: #F1AAC3;
-    box-shadow: none;
-}
-
-.gallery { /*Class for the formatting of the gallery*/
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 0 4px;
-    margin-bottom: 3rem;
-}
-  
-.column { /*Class for formatting the colums of the gallery*/
-    flex: 20%;
-    max-width: 20%;
-    padding: 0 4px;
-}
-
-.column img { /*Class that formats images in the columns*/
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 100%;
-}
-
-.gallery-button { /*Class to set the margin for my button*/
-    margin: 4rem 0 4rem 7.3rem;
 }
 
 .cake-icon { /*Class to set the margin for the cake icon*/
@@ -149,6 +98,58 @@ iframe { /*Removes the border for the iframe*/
     margin: 0 1px 0 -1px;
 }
 
+.videoHeader {
+    width: max-content;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+
+.gallery { /*Class for the formatting of the gallery*/
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    margin-bottom: 3rem;
+}
+
 .gallery-margin { /*Class to set the margin for the gallery*/
     margin-bottom: 1rem;
+}
+  
+.column { /*Class for formatting the colums of the gallery*/
+    flex: 20%;
+    max-width: 20%;
+    padding: 0 4px;
+}
+
+.column img { /*Class that formats images in the columns*/
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.button { /*Class to make a pretty looking button that transitions color when you hover over it*/
+    background-color: #dc2666;
+    width: max-content;
+    padding: 1rem 1rem;
+    color: white;
+    text-decoration: none;
+    font-family:'Urbanist', sans-serif;
+    font-weight: 800;
+    letter-spacing: 1px;
+    border-radius:0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 3.5px 8.5px;
+    /*This is the part that sets the transitions*/
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0.1, 0.2, 1);
+    transition-duration: 200ms;
+}
+
+.button:hover { /*Class that changes the look of the button when you hover over it*/
+    background-color: #F1AAC3;
+    box-shadow: none;
+}
+
+.gallery-button { /*Class to set the margin for my button*/
+    margin: 4rem 0 4rem 7.3rem;
 }
