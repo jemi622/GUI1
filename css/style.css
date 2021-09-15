@@ -1,0 +1,154 @@
+/*
+File: style.css
+GUI Assignment: Creating Your First Web Page
+Jenna Parrillo, UMass Lowell Computer Science, jenna_parrillo@student.uml.edu
+Copyright (c) 2021 by Jenna Parrillo. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by Jenna Parrillo on September 15th, 2021
+*/
+h1 { /*Sets the font size for the largest header*/
+    font-size: 4rem;
+}
+
+h2 { /*Sets the font size for the second largest header*/
+    font-size: 2.5rem;
+}
+
+p { /*Sets the font size for paragraphs*/
+    font-size: 1.5rem;
+}
+
+table { /*Sets width and font size for the table*/
+    width: 50%;
+    font-size: 1.5rem;
+}
+
+th { /*Aligns the text of the table headers to left*/
+    text-align: left;
+}
+
+body { /*Sets the margin and font for the body of the website*/
+    margin:0 0;
+    font-family:'Urbanist', sans-serif;
+}
+
+iframe { /*Removes the border for the iframe*/
+    border: 0px;
+}
+
+.videoHeader {
+    width: max-content;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+
+.center { /*Class for centering content*/
+    width: max-content;
+    margin: 0 auto;
+}
+
+.pageHeader { /*Class for my header. Makes it green and gives it some padding*/
+    background-color: #aaf1d8;
+    padding: 5rem 0
+}
+
+.mainTitle { /*Class for my title. Formats the text and centers it*/
+    font-weight: 800;
+    color: #4b116a;
+    margin: 0 auto;
+    width: max-content;
+}
+
+.leftParagraph { /*Class for a left justified paragraph*/
+    width: 50%;
+}
+
+.rightParagraph { /*Class for a right justified paragraph*/
+    width: 50%;
+    margin-left: auto;
+    text-align: right;
+}
+
+.container { /*Container class. Sets some padding and the margin for uniform containers*/
+    padding: 0 8rem;
+    margin-top: 3rem;
+}
+
+.button { /*Class to make a pretty looking button that transitions color when you hover over it*/
+    background-color: #dc2666;
+    width: max-content;
+    padding: 1rem 1rem;
+    color: white;
+    text-decoration: none;
+    font-family:'Urbanist', sans-serif;
+    font-weight: 800;
+    letter-spacing: 1px;
+    border-radius:0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 3.5px 8.5px;
+    /*This is the part that sets the transitions*/
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0.1, 0.2, 1);
+    transition-duration: 200ms;
+}
+
+.button:hover { /*Class that changes the look of the button when you hover over it*/
+    background-color: #F1AAC3;
+    box-shadow: none;
+}
+
+.gallery { /*Class for the formatting of the gallery*/
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    margin-bottom: 3rem;
+}
+  
+.column { /*Class for formatting the colums of the gallery*/
+    flex: 20%;
+    max-width: 20%;
+    padding: 0 4px;
+}
+
+.column img { /*Class that formats images in the columns*/
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.gallery-button { /*Class to set the margin for my button*/
+    margin: 4rem 0 4rem 7.3rem;
+}
+
+.cake-icon { /*Class to set the margin for the cake icon*/
+    margin: 0 4px 0 3px;
+}
+
+.weight-icon { /*Class to set the margin for the weight icon*/
+    margin: 0 2px 0 1px;
+}
+
+.lightbulb-icon { /*Class to set the margin for the lightbulb icon*/
+    margin: 0 7px 0 4px;
+}
+
+.heart-icon { /*Class to set the margin for the heart icon*/
+    margin: 0 2px 0 1px;
+}
+
+.sword-icon { /*Class to format the sword icon*/
+    enable-background:new 0 0 512.001 512.001;
+}
+
+.shield-icon { /*Class to set the margin for and format the shield icon*/
+    margin: 0 0 -2px -1px;
+    enable-background:new 0 0 347.966 347.966;
+}
+
+.cheese-icon { /*Class to set the margin for the cheese icon*/
+    margin: 0 1px 0 -1px;
+}
+
+.gallery-margin { /*Class to set the margin for the gallery*/
+    margin-bottom: 1rem;
+}

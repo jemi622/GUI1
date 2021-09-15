@@ -1,11 +1,142 @@
+<!--
+File: hw1.html
+GUI Assignment: Creating Your First Web Page
+Jenna Parrillo, UMass Lowell Computer Science, jenna_parrillo@student.uml.edu
+Copyright (c) 2021 by Jenna Parrillo. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by Jenna Parrillo on September 15th, 2021
+-->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>GUI HW1</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <!-- page content -->
-  </body>
+    <head> <!--This is the head section of the page-->
+        <meta charset="utf-8">
+        <title>Gilligan The Great</title> <!--The title of my website-->
+        <link rel="stylesheet" href="/css/style.css"> <!--Links to my css file-->
+        <!--Imports external fonts that I'm using-->
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Urbanist&display=swap" rel="stylesheet">
+        <!--The fontawesome stylesheet, for the icons in my table-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    </head>
+    <body> <!--This is the body of the website-->
+        <header class="pageHeader"> <!--The displayed title of the website, inside of the green header-->
+            <h1 class="mainTitle">The History of Gilligan</h1>
+        </header>
+        <section class="container"> <!--A container holding a left justified division that is the "Who is he" section of my website-->
+            <div class ="leftParagraph">
+                <h2>Who is he?</h2>
+                <p>Gilligan is my cat. He is an orange tabby cat that currently resides with my parents in New Hampshire. He is very grumpy, and does not like people very much. The only two people he likes are my parents. He likes to go outside while supervised, but he will not walk on grass.</p>
+            </div>
+        </section>
+        <section class="container"> <!--A container holding a right justified division that is the "Backstory" section of my website-->
+            <div class="rightParagraph">
+                <h2>Backstory</h2>
+                <p>Gilligan was born on April 23rd, 2013. We got him in July 2013. We adopted him from a shelter in Salem, New Hampshire. He had 2 siblings at the shelter. Gilligan was named at the shelter in a charity auction to raise funds. His kitty family all has names from the show "Gilligan's Island". I decided to keep his name because I thought it was creative.</p>
+            </div>
+        </section>
+        <section class="container"> <!--The beginning of the stats section-->
+            <h2>Stats</h2>
+            <table> <!--A table that is holding all my stat info-->
+                <tr>
+                    <th><i class="fas fa-birthday-cake cake-icon"></i> Age</th> <!--The age section. Uses fa-birthday-cake from fontawesome-->
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <th><i class="fas fa-weight-hanging weight-icon"></i> Weight</th> <!--The Weight section. Uses fa-weight-hanging from fontawesome-->
+                    <td>19 lbs</td>
+                </tr>
+                <tr>
+                    <th><i class="fas fa-lightbulb lightbulb-icon"></i> Intelligence</th> <!--The Intelligence section. Uses fa-lightbulb from fontawesome-->
+                    <td>Low</td>
+                </tr>
+                <tr>
+                    <th><i class="fas fa-heart heart-icon"></i> HP</th> <!--The HP section. Uses fa-heart from fontawesome-->
+                    <td>100</td>
+                </tr>
+                <tr> <!--The Attack section. Uses a free sword svg from flaticon.com-->
+                    <th><svg class="sword-icon" width="25px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="sword" x="0px" y="0px" viewBox="0 0 512.001 512.001" xml:space="preserve">
+                        <g>
+                            <g>
+                                <path d="M237.737,359.117l-84.853-84.853c-17.546-17.546-46.093-17.546-63.639,0c-5.857,5.857-5.857,15.356,0,21.213    l127.279,127.279c5.857,5.858,15.356,5.858,21.213,0C255.284,405.21,255.284,376.663,237.737,359.117z"/>
+                            </g>
+                        </g>
+                        <g>
+                            <g>
+                                
+                                <rect x="80.466" y="371.548" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -251.5829 195.7215)" width="59.999" height="59.999"/>
+                            </g>
+                        </g>
+                        <g>
+                            <g>
+                                <path d="M89.248,465.187l-42.432-42.432C29.573,405.51,0.006,417.76,0,442.147v24.859c0,12.409,5.044,23.647,13.196,31.799    c8.152,8.152,19.39,13.196,31.799,13.196h24.859C94.233,511.997,106.487,482.425,89.248,465.187z"/>
+                            </g>
+                        </g>
+                        <g>
+                            <g>
+                                <path d="M494.9,0.135L346.408,21.349c-3.719,0.528-7.106,2.444-9.488,5.345L160.255,239.209l45.662,45.662l137.886-137.886    c5.863-5.863,15.351-5.863,21.213,0c5.862,5.863,5.863,15.351,0,21.213L227.13,306.084l45.662,45.662l212.515-176.664    c2.9-2.382,4.816-5.77,5.345-9.488l21.213-148.493C513.213,7.758,504.242-1.212,494.9,0.135z"/>
+                            </g>
+                        </g> 
+                        </svg> Attack</th>
+                    <td>3</td>
+                </tr>
+                <tr> <!--The Defense section. Uses a free shield svg from flaticon.com-->
+                    <th><svg class="shield-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="shield" width="25px" x="0px" y="0px" viewBox="0 0 347.966 347.966" xml:space="preserve">
+                        <path d="M317.306,54.369C257.93,54.369,212.443,37.405,173.977,0C135.516,37.405,90.031,54.369,30.66,54.369  c0,97.401-20.155,236.936,143.317,293.597C337.46,291.304,317.306,151.77,317.306,54.369z"/>
+                        </svg> Defense</th>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <th><i class="fas fa-cheese cheese-icon"></i> Favorite Food</th> <!--The Favorite Food section. Uses fa-cheese from fontawesome-->
+                    <td>Cheese Sticks</td>
+                </tr>
+            </table>
+        </section>
+        <section class="container"> <!--This section is a centered container that contains one of my youtube videos embedded-->
+            <div class="center">
+                <h2 class="videoHeader">Featured Video</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/WUhaPLq1cuw" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+        <section class="container"> <!--The Gallery!-->
+            <h2 class="center gallery-margin">Gallery</h2>
+                <div class="gallery"> <!--This is the start of the gallery-->
+                    <div class="column"> <!--Each column contains 3 Gilligan photos-->
+                      <img src="/img/a_ghost.png" alt="An orange tabby cat looking startled">
+                      <img src="/img/boy_finds_acorn.jpg" alt="An orange tabby cat outside sitting behind an acorn">
+                      <img src="/img/IMG_0112.jpg" alt="An orange tabby cat looking very round on a couch">
+                    </div>
+                    <div class="column">
+                      <img src="/img/IMG_0252.JPG" alt="An orange tabby cat looking up at the camera">
+                      <img src="/img/IMG_0279.jpg" alt="An orange tabby cat sitting on a couch looking annoyed">
+                      <img src="/img/IMG_0449.jpg" alt="An orange tabby cat laying on the floor with some ribbon on his head">
+                    </div>
+                    <div class="column">
+                      <img src="/img/IMG_0607.jpg" alt="An orange tabby cat looking startled">
+                      <img src="/img/IMG_0735.jpg" alt="An orange tabby cat from a distance looking very confused">
+                      <img src="/img/IMG_0914.jpg" alt="A close up of an orange tabby cat laying on a couch looking at the camera">
+                    </div>
+                    <div class="column">
+                      <img src="/img/IMG_1125.jpg" alt="An orange tabby cat laying in a cat bed with one leg hanging out">
+                      <img src="/img/IMG_1396.jpg" alt="An orange tabby cat sitting on a couch like a human">
+                      <img src="/img/IMG_2671.jpg" alt="An orange tabby cat laying on a floor, belly up, in a crescent shape">
+                    </div>
+                </div>
+                <!--This button links to my twitter to show more photos of Gilli. It includes the fa-cat icon from fontawesome-->
+            <a href="https://twitter.com/i/events/1435783430327898120" target="_blank" class="button gallery-button">
+                <i class="fas fa-cat"></i>
+                Click for more Gilligan photos!
+                <i class="fas fa-cat"></i>
+            </a>
+        </section>
+        <div class="container leftParagraph"> <!--Division that contains the w3 css validation icon-->
+            <p>
+                <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                    <img style="border:0;width:88px;height:31px"
+                        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                        alt="Valid CSS!" />
+                </a>
+            </p>
+        </div>
+    </body>
 </html>
