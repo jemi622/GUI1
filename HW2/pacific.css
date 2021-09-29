@@ -1,0 +1,126 @@
+/*
+File: pacific.css
+GUI Assignment: Style a Site with External CSS
+Jenna Parrillo, UMass Lowell Computer Science, jenna_parrillo@student.uml.edu
+Copyright (c) 2021 by Jenna Parrillo. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by Jenna Parrillo on September 29th, 2021
+*/
+
+hgroup, nav, footer, figure, figcaption, aside, section, article {
+	display: block;
+}
+
+/*this formats the body of the page. sets the font, the color, and the gradient*/
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #00569f;
+    background-image: url(ptrbackground.jpg);
+	background-repeat: repeat-x;
+}
+
+/*formats the header. sets the color and adds the image to the side of it*/
+header {
+	display: block;
+	background-color: #000032;
+	background-image: url(sunset.jpg);
+	background-position: right;
+    background-repeat: no-repeat;
+}
+
+/*formats the wrappper div. sets the width, keeps the page from getting too small, a background color, and the margin*/
+#wrapper {
+	min-width: 600px;
+	background-color: #90c8e3;
+	width: 80%;
+    margin: 0 auto;
+}
+
+/*formats the content div*/
+#content {
+	background-color: white;
+	margin-left: 200px;
+    padding: 20px;
+    padding-left: 35px;
+}
+
+/*sets the style for the bullets*/
+#content ul
+{
+    list-style: inside url(marker.gif);
+}
+
+/*some formatting for nav to keep it on the left and the right width*/
+nav {
+	width: 200px;
+    float: left;
+}
+
+/*formats the list in nav, mostly text formatting*/
+nav ul {
+	font-size: 1.2em;
+	padding-left: 20px;
+    list-style-type: none;
+	font-weight: bold;
+}
+
+/*makes the nav links look less like links*/
+nav a {
+	color:#000032;
+	text-decoration: none;
+}
+
+/*turns the links white on hover*/
+nav a:hover {
+	color: #FFFFFF;
+}
+
+/*formats the image*/
+img {
+	float: left;
+	margin-right: 2rem;
+}
+
+/*formats h1 text*/
+h1 {
+	margin-bottom: 0;
+	padding: 10px;
+	color: white;
+}
+
+/*makes h2 text blue*/
+h2 {
+	color: #3399CC;
+}
+
+/*font for h1 and h2*/
+h1,
+h2 {
+	font-family: Georgia, "Times New Roman", serif;
+}
+
+/*makes the contact texxt smaller*/
+#contact {
+	font-size: 90%;
+}
+
+/*formats the resort class to make the text blue and bold*/
+.resort {
+	color: #647c8d;
+	font-weight: bold;
+}
+
+/*this was in the given file for some reason*/
+dt {
+	color: #000033;
+}
+
+/*formats the footer. makes it white, changes the text, sets the margin, etc*/
+footer {
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 75%;
+    font-style: italic;
+	background-color: white;
+	padding: 25px;
+    margin-left: 200px;
+}
