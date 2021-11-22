@@ -1,0 +1,68 @@
+<!--
+File: index.html
+GUI Assignment: Using the jQuery Plugin/UI with Your Dynamic Table
+Jenna Parrillo, UMass Lowell Computer Science, jenna_parrillo@student.uml.edu
+Copyright (c) 2021 by Jenna Parrillo. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by Jenna Parrillo on November 18th, 2021
+-->
+
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title>Multiplication Table</title>
+        <!--Adds Bootstrap and my stylesheet-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <h1 id="title">Multiplication Table</h1>
+        <div class="container mt-5">
+            <div class="row justify-content-evenly">
+                <!--This is the form that takes user input-->
+                <form class = "form-horizontal col-lg-5" role ="form" id="inputForm" name="inputForm" onsubmit="return false">
+                    <div class = "form-group">
+                        <label class="control-label">Minimum Column Value</label>
+                        <input type ="number" class="form-control" id="minc" name="minc">
+                        <div id="minc_slider"></div>
+                    </div>
+                    <div class = "form-group">
+                        <label class="control-label">Maximum Column Value</label>
+                        <input type ="number" class="form-control" id="maxc" name="maxc">
+                        <div id="maxc_slider"></div>
+                    </div>
+                    <div class = "form-group">
+                        <label class="control-label">Minimum Row Value</label>
+                        <input type ="number" class="form-control" id="minr" name="minr">
+                        <div id="minr_slider"></div>
+                    </div>
+                    <div class = "form-group">
+                        <label class="control-label">Maximum Row Value</label>
+                        <input type ="number" class="form-control" id="maxr" name="maxr">
+                        <div id="maxr_slider"></div>
+                    </div>
+                    <br>
+                    <!--This button runs my javascript when it is clicked-->
+                    <button value="Submit" onclick="validate()" type="button" id="submit">Make Tab</button>
+                    <!--This button deletes selected tabs-->
+                    <button type="button" id="delete">Delete Selected Tabs</button>
+                </form>
+                <!--This is the multiplication table div-->
+                <div class="col-lg-5" id="mymatrix"></div>
+                <!--This div holds my tabs-->
+                <div id="tabs">
+                    <ul id="tabList"></ul>
+                    <div id="tabData"></div>
+                </div>
+            </div>
+        </div>
+        <!--Adds my, bootstrap's, and jquery's scripts-->
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/additional-methods.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

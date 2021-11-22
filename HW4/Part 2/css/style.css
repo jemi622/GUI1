@@ -1,0 +1,77 @@
+/*
+File: style.css
+GUI Assignment: Using the jQuery Plugin/UI with Your Dynamic Table
+Jenna Parrillo, UMass Lowell Computer Science, jenna_parrillo@student.uml.edu
+Copyright (c) 2021 by Jenna Parrillo. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by Jenna Parrillo on November 16th, 2021
+*/
+
+/*Makes the background green*/
+body {
+    background-color: yellowgreen;
+}
+
+/*aligns the header*/
+h1 {
+    text-align: center;
+}
+
+/*Sets the height of the table and makes it scroll*/
+#mymatrix {
+    height:350px;
+    overflow:auto;
+}
+
+/*Sets a base color and border for the table*/
+.newTable th, .newTable td, .newTable table{
+    background-color: white;
+    border: 1px solid black;
+}
+
+/*Makes every other column grey*/
+td:nth-child(odd) {
+    background: gray;
+}
+
+/*makes the top header stay with scroll*/
+th {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+/*formats the table cells*/
+.newTable th, .newTable td {
+    padding: 3px;
+    text-align: center;
+}
+
+/*changes the color of the first row*/
+th.firstRow {
+    background-color: red;
+}
+
+/*changes color of first column and makes it stay with scroll*/
+td.firstCol {
+    background-color: red;
+    position: sticky;
+    left: 0;
+    z-index: 1;
+}
+
+/*changes the color of the first cell*/
+th.firstCell {
+    background-color: blueviolet;
+}
+
+/*styles the error message*/
+.error {
+    color: maroon;
+}
+
+/*styles the table in the tab*/
+.tabTable {
+    height:350px;
+    overflow:auto;
+}
