@@ -1,0 +1,65 @@
+/*
+File: style.css
+GUI Assignment: Implementing a Bit of Scrabble with Drag-and-Drop
+Jenna Parrillo, UMass Lowell Computer Science, jenna_parrillo@student.uml.edu
+Copyright (c) 2021 by Jenna Parrillo. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by Jenna Parrillo on December 15th, 2021
+*/
+
+/*sets background and text color for body*/
+body
+{
+    color:#4918ba;
+    background-color: gainsboro;
+}
+
+/*makes the header a different color*/
+.bg {
+    background: #48a33e;
+}
+
+/*makes header white*/
+h1 
+{
+    color: white;
+    text-align: center;
+}
+
+/*aligns text to center*/
+.DisplayResults
+{
+    text-align: center;
+}
+
+/*makes the scores and tile count display properly*/
+.score, .tilesleft, .bestScore
+{
+    display: inline;
+    margin: 0 auto;
+}
+
+/*sets max width for board and sets margin*/
+#board
+{
+    max-width: 539px;
+    margin: 0 auto;
+}
+
+/*makes the rack the wood, sets width, height, margin*/
+#rack
+{
+    background-image: url("../graphics_data/wood.jpg");
+    max-width: 570px;
+    height: 100px;
+    margin: 2rem auto;
+    background-repeat: no-repeat;
+}
+
+/*size and margin for tiles*/
+.letterTile
+{
+    max-width: 70px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
